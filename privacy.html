@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — sKedIt AI</title>
+<meta name="description" content="How sKedIt AI handles your data: what stays on your device, what syncs to your account, and the processors involved.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="logo.png">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="logo.png" alt="sKedIt AI logo">
+    <span class="name">sKedIt AI</span>
+  </header>
+  <nav class="top">
+    <a href="index.html">Home</a>
+    <a href="privacy.html" class="active">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+
+  <p class="kicker">Privacy Policy</p>
+  <h1>Privacy<span class="dot">.</span></h1>
+  <p class="meta">Effective 15 May 2026 · Last updated 3 June 2026</p>
+
+  <p class="lead">This policy explains what data sKedIt AI ("we", "us", "the app") collects, how we use it, and the choices you have. If anything is unclear, email <a href="mailto:alhasanmuhammadai@gmail.com">alhasanmuhammadai@gmail.com</a> and we'll explain in plain language.</p>
+
+  <h2>Who runs sKedIt AI</h2>
+  <p>sKedIt AI is operated by <strong>Alhasan Muhammad Hasan</strong>, an independent developer based in Egypt. There is no parent company — you are talking to one person and a small set of trusted service providers.</p>
+
+  <h2>What's on your device</h2>
+  <p>Your working copy lives in a local database on your phone — it's what makes the app fast and usable offline:</p>
+  <ul>
+    <li>Schedule blocks, tasks, and goals (titles, times, dates, durations, notes)</li>
+    <li>App settings (work hours, wake/sleep time, working days, scheduling mode, etc.)</li>
+    <li>Streak counts and completion history</li>
+    <li>Usage counters for plan limits</li>
+  </ul>
+
+  <h2>What syncs to your account (cloud backup)</h2>
+  <p>Because you sign in, your content is backed up to your private account on our backend (Supabase) so it restores when you reinstall the app or sign in on another device. This synced snapshot includes your tasks, schedule blocks, goals, savings goals, workouts, streaks, completion history, and app settings.</p>
+  <p>This data is stored as a per-user record protected by row-level security — <strong>only you, signed in, can read or write it.</strong> It is never shared with other users, sold, or used for advertising. You can erase it at any time with <strong>Profile → "Delete account &amp; data"</strong>.</p>
+
+  <h2>What we send to AI providers</h2>
+  <p>To make voice and AI scheduling work, some data is sent — through our backend — to AI processors and returned to your device:</p>
+  <ul>
+    <li><strong>Voice recordings:</strong> when you tap the microphone, the audio is sent to <strong>OpenAI</strong> for transcription. <strong>The audio is discarded immediately after transcription — we never store recordings.</strong></li>
+    <li><strong>Transcripts:</strong> the text of what you said is sent to <strong>Anthropic (Claude)</strong> to parse into structured tasks/blocks/goals, then returned to your device. We do not retain transcripts after the response is sent back.</li>
+    <li><strong>Scheduling context:</strong> when you use AI scheduling, rescheduling, or goal-scheduling, a short list of your current pending tasks and that day's existing blocks is sent so the AI can plan around them. Not stored after the response returns.</li>
+  </ul>
+
+  <h2>Processors we rely on</h2>
+  <ul>
+    <li><strong>Supabase</strong> — authentication, backend, and your encrypted content backup (EU region).</li>
+    <li><strong>OpenAI</strong> — audio-to-text transcription. Audio is processed and discarded.</li>
+    <li><strong>Anthropic (Claude)</strong> — natural-language understanding. Only text is sent here, never audio.</li>
+    <li><strong>RevenueCat</strong> — subscription management. Receives your account ID and purchase status, not payment details.</li>
+    <li><strong>Apple</strong> — payment processing and Sign in with Apple. Apple handles billing; we never see your card, name, or address.</li>
+    <li><strong>Google</strong> — used only if you choose "Sign in with Google".</li>
+  </ul>
+  <p>These providers process data on our behalf and are contractually bound not to use it for any other purpose. They do <strong>not</strong> sell, share, or train models on your data when accessed via their paid APIs.</p>
+
+  <h2>What we store on our servers</h2>
+  <ul>
+    <li><strong>Your email address</strong> — to sign you in.</li>
+    <li><strong>Your display name</strong> — if you provided one at sign-up or via Apple/Google.</li>
+    <li><strong>Your content backup</strong> — the synced snapshot described above (readable only by you).</li>
+    <li><strong>AI usage records</strong> — which AI action you used and when, to enforce plan limits and prevent abuse.</li>
+    <li><strong>Subscription status</strong> — whether you're on Free or Pro, and the Apple subscription identifier for your account.</li>
+  </ul>
+  <p>That is the complete list of personal data stored on our servers.</p>
+
+  <h2>What we DO NOT do</h2>
+  <ul>
+    <li>We <strong>do not</strong> use analytics tools (no Google Analytics, Amplitude, Mixpanel, or Sentry).</li>
+    <li>We <strong>do not</strong> track your behaviour across the app or anywhere else.</li>
+    <li>We <strong>do not</strong> show advertisements.</li>
+    <li>We <strong>do not</strong> sell, rent, or share your data for marketing, profiling, or any commercial purpose.</li>
+    <li>We <strong>do not</strong> let any AI provider train on your data — all calls use paid APIs with no-training terms.</li>
+    <li>We <strong>do not</strong> collect device identifiers, location, contacts, photos, or your system calendar.</li>
+  </ul>
+
+  <h2>How long we keep data</h2>
+  <ul>
+    <li><strong>On-device data:</strong> until you delete it, clear it via "Delete account &amp; data", or uninstall.</li>
+    <li><strong>Account email, content backup, usage &amp; subscription records:</strong> kept while your account exists. When you delete your account (Profile → "Delete account &amp; data"), they are removed from our servers <strong>immediately</strong> via a server-side function. If our server is briefly unreachable at that moment, we fall back to a manual deletion completed within 14 days.</li>
+    <li><strong>Voice recordings:</strong> discarded within seconds of transcription.</li>
+    <li><strong>Transcripts &amp; scheduling context sent to AI APIs:</strong> not stored by us. Providers may keep short-lived API logs for abuse prevention per their own policies; we have no access to those.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <ul>
+    <li><strong>Access</strong> — everything we hold about you is visible inside the app.</li>
+    <li><strong>Correct</strong> — edit your name in Profile, or edit any task/block directly.</li>
+    <li><strong>Delete</strong> — Profile → "Delete account &amp; data" wipes both your device and your server-side record.</li>
+    <li><strong>Export</strong> — email us and we'll send a JSON export within 30 days.</li>
+    <li><strong>Object / withdraw consent</strong> — uninstall the app and email us to delete your remote account.</li>
+    <li><strong>Complain</strong> — if you're in the EU/UK, you may contact your local data protection authority.</li>
+  </ul>
+  <p>To exercise any of these, email <a href="mailto:alhasanmuhammadai@gmail.com">alhasanmuhammadai@gmail.com</a>. We respond within 14 days.</p>
+
+  <h2>Children</h2>
+  <p>sKedIt AI is not directed at children under 13, and we do not knowingly collect their data. If you believe a child has provided us data, email us and we'll delete the account.</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>Authentication tokens are stored on-device in the iOS Keychain (via expo-secure-store).</li>
+    <li>All backend traffic is over HTTPS/TLS.</li>
+    <li>Supabase row-level security ensures each user can read and write only their own records.</li>
+    <li>API keys for OpenAI and Anthropic live only on the server, never in the app.</li>
+  </ul>
+  <p>No system is perfectly secure. If we discover a breach involving your data, we'll notify you by email within 72 hours of becoming aware of it.</p>
+
+  <h2>International transfers</h2>
+  <p>Our processors may handle data in the European Union or United States. By using sKedIt AI you agree to these transfers; we rely on each provider's Standard Contractual Clauses for cross-border flows.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. For material changes we'll update the "Last updated" date above and notify you in-app on next launch.</p>
+
+  <h2>Governing law</h2>
+  <p>This policy is governed by the laws of the Arab Republic of Egypt.</p>
+
+  <footer class="site">
+    <strong>Email:</strong> <a href="mailto:alhasanmuhammadai@gmail.com">alhasanmuhammadai@gmail.com</a><br>
+    Operator: Alhasan Muhammad Hasan, Egypt · © 2026
+  </footer>
+</div>
+</body>
+</html>
